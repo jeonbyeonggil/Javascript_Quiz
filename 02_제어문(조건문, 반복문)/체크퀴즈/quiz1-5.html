@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         const a = Number(prompt('월을 입력해주세요.', ''))
+
+         if (3 <= a && a <= 5) {
+            alert('봄입니다.')
+         } else if (6 <= a && a <= 8) {
+            alert('여름입니다.')
+         } else if (9 <= a && a <= 11) {
+            alert('가을입니다.')
+         } else {
+            alert('겨울입니다.')
+         }
+         if (a > 12 || a < 0) {
+            alert('1월부터 12월까지 입력해주세요.')
+         }
+         location.reload()
+      </script>
+   </body>
+</html>
