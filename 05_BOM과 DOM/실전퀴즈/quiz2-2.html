@@ -24,6 +24,28 @@
          const op2 = document.querySelector('#op2')
          const selectBox = document.querySelector('#oper')
          const answer = document.querySelector('#answer')
+
+         function calculate() {
+            let result = 0
+            const value = selectBox.value
+
+            switch (value) {
+               case 'plus':
+                  result = Number(op1.value) + Number(op2.value)
+                  break
+               case 'minus':
+                  result = Number(op1.value) - Number(op2.value)
+                  break
+               default:
+                  result = ''
+            }
+
+            answer.textContent = result
+         }
+
+         op1.addEventListener('input', calculate)
+         op2.addEventListener('input', calculate)
+         selectBox.addEventListener('change', calculate)
       </script>
    </body>
 </html>

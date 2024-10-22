@@ -4,7 +4,44 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Document</title>
-      <script></script>
+      <script>
+         var today = new Date()
+         console.log(today)
+
+         switch (today.getDay()) {
+            case 0:
+               day = '일'
+               break
+            case 1:
+               day = '월'
+               break
+            case 2:
+               day = '화'
+               break
+            case 3:
+               day = '수'
+               break
+            case 4:
+               day = '목'
+               break
+            case 5:
+               day = '금'
+               break
+            case 6:
+               day = '토'
+               break
+            case 7:
+               day = '일'
+               break
+         }
+
+         document.write(`오늘은 ${today.getFullYear()}년 ${today.getMonth() + 1}월 ${today.getDate()}일 ${day}요일`)
+
+         /* const now = new Date()
+         console.log(now) 
+         > 개인플젝으로 홈페이지에 넣을 기능 저장용
+         금일 날짜 시간을 대한민국 표준 시간으로 해줌.*/
+      </script>
    </head>
    <body></body>
 </html>
